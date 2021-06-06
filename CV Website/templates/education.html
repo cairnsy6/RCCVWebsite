@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include 'header.html' %}
+
+<body>
+
+<section id="top">
+
+</section>
+<div class="container">
+    {% include 'navigation.html' %}
+
+    <section id="education">
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <a href="https://www.umkc.edu">
+            <div class="col">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="static/Images/UMKCdegree.jpeg" class="card-img-top">
+                        </div>
+                        <div class="flip-card-back">
+                            <h4>Bachelor of Business Administration - Finance</h4>
+                            <p>UMKC - Kansas City, MO</p>
+                            <p>GPA - 3.2</p>
+                            <p>Subjects:</p>
+                            <ul>
+                                <li>Personal Finance</li>
+                                <li>Investments</li>
+                                <li>Entrepreneurship</li>
+                                <li>Strategic Management</li>
+                                <li>Accounting</li>
+                                <li>Global Banking</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </a>
+            <a href="https://www.avila.edu">
+            <div class="col">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="static/Images/aviladegree.jpeg" class="card-img-top">
+                        </div>
+                        <div class="flip-card-back">
+                            <h4>Master of Business Administration</h4>
+                            <p>Avila University - Kansas City, MO</p>
+                            <p>GPA - 3.79</p>
+                            <p>Subjects:</p>
+                            <ul>
+                                <li>Project Management</li>
+                                <li>Accounting</li>
+                                <li>International Finance</li>
+                                <li>Strategic Management</li>
+                                <li>Marketing</li>
+                                <li>Information Systems</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </a>
+            <a href="https://www.ncl.ac.uk">
+            <div class="col">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="static/Images/Newcastledegree.png" class="card-img-top">
+                        </div>
+                        <div class="flip-card-back">
+                            <h4>Master of Science - Computer Science</h4>
+                            <p>Newcastle University - Newcastle, UK</p>
+                            <p>Grade - Merit</p>
+                            <p>Subjects:</p>
+                            <ul>
+                                <li>Programming</li>
+                                <li>Advanced Programming</li>
+                                <li>Databases</li>
+                                <li>Software Engineering</li>
+                                <li>Languages - Java, Linux, SQL</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </a>
+        </div>
+
+    </section>
+
+    {% include 'footer.html' %}
+</div>
+
+
+
+
+
+
+<!-- Pager -->
+
+</div>
+
+
+
+<!-- Footer -->
+
+
+<!-- Bootstrap core JavaScript -->
+<script src="{{url_for('static', filename='vendor/jquery/jquery.min.js')}}"></script>
+<script src="{{url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+
+<!-- Custom scripts for this template -->
+<script src="{{ url_for('static', filename='js/clean-blog.min.js') }}"></script>
+
+</body>
+
+</html>

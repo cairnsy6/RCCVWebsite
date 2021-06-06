@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<nav class="nav nav-pills nav-justified">
+  <a class="nav-link" href="{{ url_for('home') }}">
+      <span style="font-size: 3em; color: #3461CA;">
+  <i class="fas fa-home"></i>
+</span></a>
+
+ <a class="nav-link" href="{{url_for('education')}}">
+      <span style="font-size: 3em; color: #3461CA;">
+  <i class="fas fa-book"></i>
+</span></a>
+   <a class="nav-link" href="{{url_for('experience')}}">
+      <span style="font-size: 3em; color: #3461CA;">
+  <i class="fas fa-briefcase"></i>
+</span></a>
+  <a class="nav-link" href="{{url_for('projects')}}">
+      <span style="font-size: 3em; color: #3461CA;">
+  <i class="fas fa-project-diagram"></i>
+</span></a>
+</nav>
+
+</body>
+</html>

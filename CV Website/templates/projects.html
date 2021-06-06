@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include 'header.html' %}
+
+<body>
+
+<section id="top">
+
+</section>
+<div class="container">
+{% include 'navigation.html' %}
+<div class="row">
+  <section id="projects">
+
+      <h1>Coming Soon</h1>
+
+  </section>
+
+    {% include 'footer.html' %}
+</div>
+
+
+
+
+
+
+        <!-- Pager -->
+
+  </div>
+
+
+
+  <!-- Footer -->
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{{url_for('static', filename='vendor/jquery/jquery.min.js')}}"></script>
+  <script src="{{url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{{ url_for('static', filename='js/clean-blog.min.js') }}"></script>
+
+</body>
+
+</html>

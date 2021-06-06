@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include 'header.html' %}
+
+<body>
+
+<section id="top">
+
+</section>
+<div class="container">
+{% include 'navigation.html' %}
+<div class="row">
+  <section id="welcome">
+
+
+
+
+    <div class="col-5">
+      <h4><strong>Name:</strong> Rhys Cairns</h4>
+      <hr>
+      <h6><strong>Occupation:</strong> Support Analyst</h6>
+      <h6><strong>Company: </strong>Rightmove</h6>
+      <h6><strong>Address: </strong>Butler's Farm, AL36RF</h6>
+      <h6><strong>Goal: </strong>Software Developer</h6>
+      </br>
+      </br>
+      </br>
+      <a class="btn btn-primary btn-lg" href="{{ url_for('contact') }}">Get in Touch</a>
+      </br>
+      </br>
+      <h6><strong>Phone: </strong>+44754937565</h6>
+      <h6><strong>Email: </strong>cairns.rhys@gmail.com</h6>
+
+    </div> <div class="col-6">
+
+    </div>
+    <div class="col-1">
+
+    </div>
+  </div>
+  </section>
+
+    {% include 'footer.html' %}
+</div>
+
+
+
+
+
+
+        <!-- Pager -->
+
+  </div>
+
+
+
+  <!-- Footer -->
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{{url_for('static', filename='vendor/jquery/jquery.min.js')}}"></script>
+  <script src="{{url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{{ url_for('static', filename='js/clean-blog.min.js') }}"></script>
+
+</body>
+
+</html>

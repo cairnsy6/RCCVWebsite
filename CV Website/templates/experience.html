@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+{% include 'header.html' %}
+
+<body>
+
+<section id="top">
+
+</section>
+<div class="container">
+{% include 'navigation.html' %}
+<div class="row">
+  <section id="experience">
+     {% for job in jobs %}
+    <a href="{{job.job_url}}">
+  <div class="card mb-3">
+  <div class="row g-0">
+    <div class="col-md-6">
+      <img src="static/Images/{{job.job_image}}" alt="...">
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <h4 class="card-title"><strong>Title: </strong>{{ job.job_title}}</h4>
+        <h6><strong>Company: </strong>{{ job.company}}</h6>
+        <h6><strong>Duration: </strong>{{job.start_job}} - {{job.end_job}}</h6>
+        <h6><strong>Job Description:-</strong></h6>
+        <h6><strong>1)</strong> {{job.job_description}}</h6>
+        <h6><strong>2) </strong>{{job.job_description1}}</h6>
+        <h6><strong>3) </strong>{{job.job_description2}}</h6>
+
+      </div>
+    </div>
+  </div>
+</div>
+  </a>
+    </br>
+    </br>
+    {% endfor %}
+
+  </section>
+
+    {% include 'footer.html' %}
+</div>
+
+
+
+
+
+
+        <!-- Pager -->
+
+  </div>
+
+
+
+  <!-- Footer -->
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{{url_for('static', filename='vendor/jquery/jquery.min.js')}}"></script>
+  <script src="{{url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{{ url_for('static', filename='js/clean-blog.min.js') }}"></script>
+
+</body>
+
+</html>
