@@ -33,7 +33,7 @@ class Job(db.Model):
 db.create_all()
 
 my_email = "cairns.python@gmail.com"
-password = "Lionheart93"
+password = "grihqzcxfknjppls"
 
 email_to = "cairns.python@gmail.com"
 
